@@ -9,15 +9,15 @@ import javax.persistence.Id;
 public class User {
 	@Id		//primary key
 	@GeneratedValue		//@id와 같이 사용하여 key 값을 generate 함.
-	private Integer id;
+	private Long id;
 	
 	private String name;
 	private String email;
 	
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {
